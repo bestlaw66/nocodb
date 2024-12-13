@@ -2457,7 +2457,7 @@ watch(vSelectedAllRecords, (selectedAll) => {
         </div>
 
         <template #overlay>
-          <NcMenu class="!rounded !py-0" @click="contextMenu = false" variant="small">
+          <NcMenu class="!rounded !py-0" variant="small" @click="contextMenu = false">
             <template v-if="!vSelectedAllRecords">
               <NcMenuItem
                 v-if="isEeUI && !contextMenuClosing && !contextMenuTarget && !isDataReadOnly && selectedRows.length"
